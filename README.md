@@ -1,2 +1,2 @@
-#A checkout page <br/>
+A checkout page <br/>
 Link:
