@@ -1,0 +1,239 @@
+  body{
+    background-color: blueviolet;
+  }
+
+  .heading{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: larger;
+    color: #ffffff;
+  }
+
+ .row{
+  font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+ }
+
+ /*******************
+      Column 1
+********************/
+
+ .col-1{
+    flex-basis: 50%;
+    position: relative;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+
+.wrapper {
+  margin-top: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  font-family: "Arimo";
+  background-color: #b3a6a2;
+  box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 5px;  
+}
+
+
+.container {
+  width: 75%;
+  padding: 5% 10%;
+}
+
+h1 {
+  align-self: center;
+}
+
+form {
+  width: 100%;
+}
+form > * {
+  margin-top: 20px;
+}
+form input {
+  width: 100%;
+  min-height: 25px;
+  border: 0;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  font-family: "Arimo";
+  margin-top: 5px;
+  color: #8e2807;
+  border-radius: 4px;
+}
+form label {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #8e2807;
+}
+form h1 {
+  font-size: 24px;
+  line-height: 10px;
+  color: #493b76;
+  letter-spacing: 1px;
+}
+form h1:nth-of-type(2) {
+  margin-top: 10%;
+}
+
+.name {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+.name div {
+  width: 45%;
+}
+
+.address-info {
+  display: flex;
+  justify-content: space-between;
+}
+.address-info div {
+  width: 30%;
+}
+
+.cc-info {
+  display: flex;
+  justify-content: space-between;
+}
+.cc-info div {
+  width: 45%;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.btns button {
+  margin: 3px 0;
+  margin-bottom: 8px;
+  height: 30px;
+  width: 40%;
+  color: #cfc9e1;
+  background-color: #4a3b76;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 0.3rem;
+  letter-spacing: 2px;
+}
+.btns button:hover {
+  animation-name: btn-hov;
+  animation-duration: 550ms;
+  animation-fill-mode: forwards;
+}
+
+
+@media (max-width: 900px) {
+
+  .col-1{
+    width:50%
+  }
+  .wrapper {
+    width: 50%;
+  }
+
+  .container {
+    width: 50%;
+  }
+
+  .btns {
+    align-items: center;
+  }
+  .btns button {
+    width: 30%;
+  }
+
+  form h1 {
+    text-align: center;
+    font-size: 50%;
+  }
+
+  .name,
+.address-info,
+.cc-info {
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+  }
+  .name div,
+.address-info div,
+.cc-info div {
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    display: flex;
+  }
+
+  .street,
+.cc-num {
+    text-align: center;
+  }
+
+  input {
+    margin: 5px 0;
+    min-height: 30px;
+  }
+}
+
+/*******************
+      Column 2 
+********************/
+
+
+.col-2{
+  flex-basis: 35%;
+  position: relative;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.wrapper_2{
+  width: 60%; 
+  font-family: "Arimo";
+  background-color: #c2c1c1;
+  box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 5px;
+}
+
+.container_2 {
+  width: 60%;
+  height: 90%;
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+img{
+  height: 230px;
+  padding-top: 10px;
+  margin-left: 0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.btns {
+  align-items: center;
+}
+.btns button {
+  width: 50%;
+}
+
+@media (max-width: 900px){
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
